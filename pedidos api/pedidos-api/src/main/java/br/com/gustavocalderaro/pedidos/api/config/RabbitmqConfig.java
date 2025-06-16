@@ -43,12 +43,6 @@ public class RabbitmqConfig {
 	
 	@Bean
 	public ApplicationListener<ApplicationReadyEvent> applicationReadyEventApplicationListener(RabbitAdmin rabbitAdmin){
-	//	return new ApplicationListener<ApplicationReadyEvent>() {
-	//		@Override
-	//		public void onApplicationEvent(ApplicationReadyEvent event) {
-	//			rabbitAdmin.initialize();
-	//		}
-	//	};
 		return event -> rabbitAdmin.initialize();
 	}
 	
