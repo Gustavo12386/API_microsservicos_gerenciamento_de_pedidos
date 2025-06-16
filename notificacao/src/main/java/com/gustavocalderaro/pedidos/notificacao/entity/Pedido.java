@@ -4,11 +4,8 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
-
 import com.fasterxml.jackson.annotation.JsonFormat;
-
 import com.gustavocalderaro.pedidos.notificacao.entity.enums.Status;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;

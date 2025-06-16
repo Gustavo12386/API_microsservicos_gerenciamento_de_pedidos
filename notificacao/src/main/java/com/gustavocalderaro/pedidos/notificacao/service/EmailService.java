@@ -14,6 +14,7 @@ public class EmailService {
 	private JavaMailSender mailSender;
 	
 	public void enviarEmail(Pedido pedido) {
+		
 		SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
 		
 		simpleMailMessage.setFrom("pedidos-api@company.com");
