@@ -1,9 +1,7 @@
 # Microsservicos_gerenciamento_de_pedidos
 
 ## 💻 Sobre o Sistema
-- Esse projeto se trata de uma aplicação de microsserivos de gerenciamento de pedidos, no qual a arquitetura foi desenvolvida com foco em comunicação assíncrona entre os serviços, utilizando RabbitMQ como broker de mensagens.
-O sistema é responsável por registrar os pedidos, enviar notificações por email através do MailHog e processá-los pelo banco de dados PostgreSQL simultaneamente,
-garantindo alta performance e escalabilidade por meio do desacoplamento entre os módulos, e também foi utilizado o Swagger para a documentação das apis.
+- Esse projeto se trata de uma aplicação de microsserivos de gerenciamento de pedidos realizada no curso criando microsservicos com Spring Boot 3 e RabbitMQ do instrutor Wendel Alves Segadilha, no qual a arquitetura foi desenvolvida com foco em comunicação assíncrona entre os serviços, utilizando RabbitMQ como broker de mensagens. O sistema é responsável por registrar os pedidos, enviar notificações por email através do MailHog e processá-los pelo banco de dados PostgreSQL simultaneamente, garantindo alta performance e escalabilidade por meio do desacoplamento entre os módulos, e também foi utilizado o Swagger para a documentação das apis.
 
  ## ✨ Tecnologias Utilizadas
 - Java 21
