@@ -1,7 +1,7 @@
 # Sistema_Microsservicos_gerenciamento_de_pedidos
 
 ## 💻 Sobre o Sistema
-- Esse projeto se trata de uma aplicação de microsserivos de gerenciamento de pedidos realizada no curso Criando Microsservicos com Spring Boot 3 e RabbitMQ do instrutor Wendel Alves Segadilha, no qual a arquitetura foi desenvolvida com foco em comunicação assíncrona entre os serviços, utilizando RabbitMQ como broker de mensagens. O sistema é responsável por registrar os pedidos, enviar notificações por email através do MailHog e processá-los pelo banco de dados PostgreSQL simultaneamente, garantindo alta performance e escalabilidade por meio do desacoplamento entre os módulos, e também foi utilizado o Swagger para a documentação das apis.
+- Esse projeto se trata de uma aplicação de microsserivos de gerenciamento de pedidos realizada no curso Criando Microsservicos com Spring Boot 3 e RabbitMQ do instrutor Wendel Alves Segadilha, no qual a arquitetura foi desenvolvida com foco em comunicação assíncrona entre os serviços, utilizando RabbitMQ como broker de mensagens. O sistema é responsável por registrar os pedidos, enviar notificações por email através do MailHog e processá-los pelo banco de dados PostgreSQL simultaneamente, garantindo alta performance e escalabilidade por meio do desacoplamento entre os módulos, e também foi utilizado o Swagger para a documentação das apis e realização de deploy na AWS com os serviços: EC2, IAM e VPC.
 
  ## ✨ Tecnologias Utilizadas
 - Java 21
@@ -11,6 +11,7 @@
 - RabbitMQ
 - MailHog
 - Swagger
+- AWS
 - Hibernate
 - JPA
 
@@ -19,15 +20,19 @@
 - [ ] Criação do sistema com Spring Boot, Maven, JPA e o Hibernate
 - [ ] Configuração do Swagger nas apis
 - [ ] Configuração do RabbitMQ nas apis
+- [ ] Configuração do MailHog
+- [ ] Deploy na AWS
 
 ## 🚀 Como Executar
 - Clone o repositório
 - Abra em qualquer IDE Java
 - Execute o projeto Spring Boot
 
-## Imagens do JSON gerada pelo endpoint
+## Imagens do JSON gerada pelo endpoint localhost e o endpoint com ip do AWS EC2
 - endpoint:  `localhost:8082/api/v1/pedidos`
 ![Captura de tela de 2025-06-17 18-17-47](https://github.com/user-attachments/assets/63b015dd-43da-4050-bef8-86e6b060f128)
+- endpoint:  `3.22.75.25:8082/api/v1/pedidos`
+![aws](https://github.com/user-attachments/assets/d59d2221-3844-4fd8-8c42-771d373be92d)
 
 ## Imagem da tabela da base de dados do microsservico de processamento
 - tabela item-pedido
